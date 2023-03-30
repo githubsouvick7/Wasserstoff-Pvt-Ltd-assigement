@@ -1,0 +1,59 @@
+.box {
+    margin-right: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #8676FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    margin-right: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #66C8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    margin-right: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #FF9066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    width: 200px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.two {
+    width: 200px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.three {
+    width: 200px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.value {
+    padding: 8px 0;
+    font-size: 20px;
+    color: #383874;
+}
