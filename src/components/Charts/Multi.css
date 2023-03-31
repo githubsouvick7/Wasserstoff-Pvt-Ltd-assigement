@@ -1,0 +1,18 @@
+.progress>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

@@ -1,54 +1,50 @@
 import React from 'react';
-import Chart from "react-apexcharts";
-
-let options = {
-  chart: {
-    height: 270,
-    type: "radialBar"
-  },
-
-  series: [67, 40],
-
-  plotOptions: {
-    radialBar: {
-      hollow: {
-        margin: 15,
-        size: "60%"
-      },
-
-      dataLabels: {
-        showOn: "always",
-        name: {
-          offsetY: -10,
-          show: true,
-          color: "#888",
-          fontSize: "10px"
-        },
-        value: {
-          color: "#111",
-          fontSize: "15px",
-          show: true
-        }
-      }
-    }
-  },
-
-  stroke: {
-    lineCap: "round",
-  },
-  labels: ["Total earning", "Total sale"]
-};
-
+import './Multi.css'
 
 const MultiRedialCircle = () => {
   return (
-    <Chart
-      options={options}
-      series={options.series}
-      type="radialBar"
-      width="200px"
-      height="190px"
-    />
+    <div className="progress">
+      <div
+        style={{
+          width: "130px",
+          height: "130px",
+          border: "4.89873px solid #FF708B",
+          borderRadius: "50%"
+        }}
+      >
+        <div
+          style={{
+            width: "100px",
+            height: "100px",
+            border: "4.89873px solid #FFBA69",
+            borderRadius: "50%"
+          }}
+        >
+          <div
+            style={{
+              width: "50px",
+              height: "50px",
+              border: "4.89873px solid #DBDFF1",
+              borderRadius: "50%",
+              background: "#F4F6FF",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            <div
+              style={{
+                width: "15px",
+                height: "15px",
+                border: "4.89873px solid #8676FF",
+                borderRadius: "50%"
+              }}
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   )
 }
 
