@@ -1,7 +1,7 @@
 import React from "react";
 import Allusers from "../../Utilities/Allusers/Allusers";
 import Category from "../../Utilities/Category/Category";
-import CirculerBar from "../Charts/CirculerBar";
+import CirculerBar from "../Charts/Circulerbar/CirculerBar";
 import Column from "../Charts/Column";
 import WorldMap from "../Charts/WorldMap";
 import styles from "./Home.module.css";
@@ -11,10 +11,7 @@ import Seals from "../Seals/Seals";
 
 function Home() {
   const [open, setOpen] = React.useState(false);
-  // const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
-
   const handleClose = (event) => {
-    // setOpen(false);
     if (open === true) {
       setOpen(false)
     } else {
