@@ -1,18 +1,23 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Header from './Components/Header/Header/Header'
-import Home from './Components/Home/Home'
-const App = () => {
+import './App.css';
+import Home from './components/Home/Home';
+import { Route, Switch} from "react-router-dom";
+import DashBoard from './components/DashBoard/DashBoard';
+
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <div className="App">
+      <div className="container">
+      <Switch>
+        <Route exact path="/">
+        <Home />
+        </Route>
+        <Route exact path="/Dashboard">
+          <DashBoard />
+        </Route>
+      </Switch>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
